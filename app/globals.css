@@ -1,27 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+@layer utilities {
+  .max-container {
+    @apply mx-auto max-w-[1440px];
+  }
+
+  .padding-container {
+    @apply px-6 lg:px-20 3xl:px-0;
+  }
+  
+  .flexCenter {
+    @apply flex items-center justify-center;
+  }
+
+  .flexBetween {
+    @apply flex items-center justify-between;
+  }
+
+  .flexStart {
+    @apply flex items-center justify-start;
+  }
+
+  .flexEnd {
+    @apply flex items-center justify-end;
+  }
+
+  /* Font */
+  .regular-10 {
+    @apply text-[10px] font-[400] leading-[16px];
+  }
+
+  .regular-12 {
+    @apply text-[12px] font-[400] leading-[18px];
+  }
+
+  .regular-14 {
+    @apply text-[14px] font-[400] leading-[20px];
+  }
+
+  .regular-16 {
+    @apply text-[16px] font-[400] leading-[24px];
+  }
+
+  .regular-18 {
+    @apply text-[18px] font-[400] leading-[26px];
+  }
+
+  .regular-20 {
+    @apply text-[20px] font-[400] leading-[28px] tracking-[0.6px];
+  }
+
+  .regular-24 {
+    @apply text-[24px] font-[400] leading-[40px] tracking-[0.6px];
+  }
+
+  .medium-16 {
+    @apply text-[16px] font-[500] leading-[24px];
+  }
+
+  .medium-18 {
+    @apply text-[18px] font-[500] leading-[26px];
+  }
+
+  .medium-20 {
+    @apply text-[20px] font-[500] leading-[32px] tracking-[0.6px];
+  }
+
+  .medium-24 {
+    @apply text-[24px] font-[500] leading-[40px] tracking-[0.6px];
+  }
+
+  .bold-18 {
+    @apply text-[18px] font-[700] leading-[26px];
+  }
+
+  .bold-20 {
+    @apply text-[20px] font-[700] leading-[32px];
+  }
+
+  .bold-30 {
+    @apply text-[30px] font-[700] leading-[40px] tracking-[-1px];
+  }
+
+  .bold-36 {
+    @apply text-[36px] font-[700] leading-[52px] tracking-[-1px];
+  }
+
+  .bold-56 {
+    @apply text-[56px] font-[700] leading-[62px] tracking-[-1px];
+  }
+
+  .bold-72 {
+    @apply text-[72px] font-[700] leading-[88px] tracking-[-1px];
+  }
+
+  .bold-86 {
+    @apply text-[86px] font-[700] leading-[88px] tracking-[-2px];
+  }
+
+  .bold-104 {
+    @apply text-[104px] font-[700] leading-[120px] tracking-[-2px];
+  }
 }
