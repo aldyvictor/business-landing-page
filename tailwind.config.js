@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         primary: {
           red : {
+            50: '#F16A6A',
             100: '#F15757',
           },
           yellow: {
