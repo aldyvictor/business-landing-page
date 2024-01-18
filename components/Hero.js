@@ -5,7 +5,7 @@ import AnchorButton from './AnchorButton'
 const Hero = () => {
   return (
     <section
-        className='max-container padding-container relative flex items-center justify-start py-4 md:py-8 mb-32 mt-24'
+        className='max-container-1280 2xl:max-container padding-container relative flex items-center justify-start py-4 md:py-8 mb-32 mt-24'
     >
         <div className='w-full 2xl:w-2/3 flex items-start justify-start flex-col z-10'>
             <div className='flex items-end justify-start'>
@@ -44,7 +44,7 @@ const Hero = () => {
                 FramerBite provides the essential elements for crafting a top-tier website for your SaaS platform.
             </h1>
 
-            <div className='flexCenter md:flexStart  md:w-full flex-col md:flex-row flex-col-reverse gap-6 md:gap-10 mt-8 lg:mt-24'>
+            <div className='flexCenter md:flexStart w-full flex-col md:flex-row flex-col-reverse gap-6 md:gap-10 mt-8 lg:mt-24'>
                 <AnchorButton
                     href='/'
                     variant='btn-red-primary'
@@ -89,7 +89,7 @@ const Hero = () => {
             </div>
         </div>
 
-        <div className='absolute z-0 -right-[90%] sm:-right-2/3 md:-right-2/4 lg:-right-[45%] 2xl:-right-1/3 top-4 sm:-top-6 lg:-top-16 2xl:-top-12'>
+        <div className='absolute z-0 -right-[90%] sm:-right-2/3 md:-right-2/4 lg:-right-[55%] 2xl:-right-1/3 top-4 sm:-top-6 lg:-top-16 2xl:-top-12'>
             <Image 
                 src={'/assets/hero-img.png'}
                 alt='hero-bg'

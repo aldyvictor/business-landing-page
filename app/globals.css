@@ -19,6 +19,10 @@ body {
     @apply mx-auto max-w-[1440px];
   }
 
+  .max-container-1280 {
+    @apply mx-auto max-w-[1280px];
+  }
+
   .padding-container {
     @apply px-6 lg:px-20 3xl:px-0;
   }
@@ -86,6 +90,14 @@ body {
 
   .medium-24 {
     @apply text-[24px] font-[500] leading-[40px] tracking-[0.6px];
+  }
+
+  .medium-28 {
+    @apply text-[28px] font-[500] leading-[40px] tracking-[0.6px];
+  }
+
+  .medium-38 {
+    @apply text-[38px] font-[500] leading-[48px] tracking-[0.6px];
   }
 
   .bold-18 {
@@ -164,4 +176,12 @@ body {
   background-size: cover;
   /* background position offset to right */
   background-position: 50% 100% 0% 0%;
+}
+
+.box-shadow {
+  box-shadow: 0px 13px 29px 0px rgba(245, 192, 132, 0.10), 0px 53px 53px 0px rgba(245, 192, 132, 0.09), 0px 119px 71px 0px rgba(245, 192, 132, 0.05), 0px 212px 85px 0px rgba(245, 192, 132, 0.01), 0px 331px 93px 0px rgba(245, 192, 132, 0.00);
+}
+
+.box-shadow-mobile {
+  box-shadow: 0px 4.313px 10.063px 0px rgba(251, 177, 136, 0.10), 0px 17.25px 17.25px 0px rgba(251, 177, 136, 0.09), 0px 40.25px 24.438px 0px rgba(251, 177, 136, 0.05), 0px 70.438px 28.75px 0px rgba(251, 177, 136, 0.01), 0px 110.688px 30.188px 0px rgba(251, 177, 136, 0.00);
 }

@@ -45,6 +45,14 @@ module.exports = {
       borderRadius: {
         '5xl': '40px',
       },
+      boxShadow: {
+        'dekstop': '0px 13px 29px 0px',
+        'mobile': '0px 4.313px 10.063px 0px',
+      },
+      boxShadowColor: {
+        'orange-dekstop': 'rgba(245, 192, 132, 0.10), 0px 53px 53px 0px rgba(245, 192, 132, 0.09), 0px 119px 71px 0px rgba(245, 192, 132, 0.05), 0px 212px 85px 0px rgba(245, 192, 132, 0.01), 0px 331px 93px 0px rgba(245, 192, 132, 0.00)',
+        'orange-mobile': 'rgba(251, 177, 136, 0.10), 0px 17.25px 17.25px 0px rgba(251, 177, 136, 0.09), 0px 40.25px 24.438px 0px rgba(251, 177, 136, 0.05), 0px 70.438px 28.75px 0px rgba(251, 177, 136, 0.01), 0px 110.688px 30.188px 0px rgba(251, 177, 136, 0.00)',
+      },
     },
   },
   plugins: [],
