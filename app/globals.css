@@ -64,6 +64,10 @@ body {
     @apply text-[20px] font-[400] leading-[28px] tracking-[0.6px];
   }
 
+  .regular-22 {
+    @apply text-[22px] font-[400] leading-[32px] tracking-[0.6px];
+  }
+
   .regular-24 {
     @apply text-[24px] font-[400] leading-[40px] tracking-[0.6px];
   }
@@ -100,6 +104,13 @@ body {
     @apply text-[36px] font-[700] leading-[52px] tracking-[-1px];
   }
 
+  .bold-40 {
+    @apply text-[40px] font-[700] leading-[52px] tracking-[-1px];
+  }
+
+  .bold-42 {
+    @apply text-[42px] font-[700] leading-[52px] tracking-[-1px];
+  }
   .bold-56 {
     @apply text-[56px] font-[700] leading-[62px] tracking-[-1px];
   }
@@ -145,4 +156,12 @@ body {
   width: 270px;
   height: 100%;
   background: #fff;
+}
+
+.bg-hero {
+  background-image: url('/assets/hero-img.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background position offset to right */
+  background-position: 50% 100% 0% 0%;
 }

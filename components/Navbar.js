@@ -8,7 +8,7 @@ import AnchorButton from './AnchorButton'
 const Navbar = () => {
 
   return (
-    <nav className='flexBetween padding-container 3xl:px-20 relative py-7 z-30'>
+    <nav className='flexBetween padding-container 3xl:px-20 absolute w-full py-7 z-30'>
       <Link href='/' className='flexStart gap-3'>
         <Image 
           src={'/assets/wadde-logo.png'}
