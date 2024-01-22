@@ -1,3 +1,4 @@
+import AboutUs from '@/components/AboutUs'
 import Hero from '@/components/Hero'
 import Partner from '@/components/Partner'
 import Product from '@/components/Product'
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Partner />
       <Product />
+      <AboutUs />
     </>
   )
 }
