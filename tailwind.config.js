@@ -24,6 +24,12 @@ module.exports = {
           blue: {
             100: '#2B71FA',
           },
+          linearBlue: {
+            100: '#F6F6F9',
+          },
+          blueA: {
+            100: '#E1E1E9',
+          },
           light: {
             100: '#F6F6F9',
           },

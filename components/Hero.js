@@ -93,8 +93,8 @@ const Hero = () => {
             <Image 
                 src={'/assets/hero-img.png'}
                 alt='hero-bg'
-                width={1342}
-                height={767}
+                width={1403}
+                height={816}
                 className='object-cover w-[563px] h-[322px] sm:w-[734px] sm:h-[420px] md:w-[1000px] md:h-[572px] lg:w-[1342px] lg:h-[767px]'
             />
         </div>
