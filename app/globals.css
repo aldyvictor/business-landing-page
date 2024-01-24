@@ -120,6 +120,10 @@ body {
     @apply text-[26px] font-[700] leading-[32px];
   }
 
+  .bold-28 {
+    @apply text-[28px] font-[700] leading-[40px];
+  }
+
   .bold-30 {
     @apply text-[30px] font-[700] leading-[40px] tracking-[-1px];
   }
@@ -188,4 +192,10 @@ body {
   background-size: cover;
   /* background position offset to right */
   background-position: 50% 100% 0% 0%;
+}
+
+.text-gradient-black {
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.144) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

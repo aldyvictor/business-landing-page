@@ -121,7 +121,7 @@ const Product = () => {
                     width={463}
                     height={278}
                     alt='visa-card'
-                    className='object-contain'
+                    className='object-contain h-full w-full'
                 />
             </div>
         </div>
