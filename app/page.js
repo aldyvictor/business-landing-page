@@ -1,4 +1,5 @@
 import AboutUs from '@/components/AboutUs'
+import Achievement from '@/components/Achievement'
 import Hero from '@/components/Hero'
 import Partner from '@/components/Partner'
 import Product from '@/components/Product'
@@ -12,6 +13,7 @@ export default function Home() {
       <Product />
       <AboutUs />
       <Testimonials />
+      <Achievement />
     </>
   )
 }
