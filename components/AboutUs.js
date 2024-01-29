@@ -71,7 +71,7 @@ const AboutUs = () => {
             </div>
         </div>
         
-        <div className='flex items-start flex-col gap-[52px'>
+        <div className='flex items-start justify-between h-full flex-col'>
             <h2 className='medium-18 uppercase text-primary-red-100'>
                 About Us
             </h2>
