@@ -81,7 +81,7 @@ const ProductAdvantages = () => {
                     X equips you with the essential tools to craft a genuinely professional SaaS website.
                 </p>
 
-                <ul className='flex items-center justify-start flex-col gap-[18px]  mb-4 xl:mb-1'>
+                <ul className='flex items-start justify-start flex-col gap-[18px]  mb-4 xl:mb-1'>
                     <li className='flex items-center justify-start gap-[14px]'>
                         <div className='flex items-center justify-center w-[24] h-[24]'>
                             <Image 
@@ -97,7 +97,7 @@ const ProductAdvantages = () => {
                             Effortless Browsing
                         </p>
                     </li>
-                    <li className='flex items-center flex items-center justify-start gap-[14px]'>
+                    <li className='flex flex items-center justify-start gap-[14px]'>
                         <div className='flex items-center justify-center w-[24] h-[24]'>
                             <Image 
                                 src={'/assets/check-blue.svg'}
@@ -109,10 +109,10 @@ const ProductAdvantages = () => {
 
                         </div>
                         <p className='medium-20'>
-                            Effortless Browsing
+                            Secure Top 5% Industry Experts for Your Project
                         </p>
                     </li>
-                    <li className='flex items-center flex items-center justify-start gap-[14px]'>
+                    <li className='flex flex items-center justify-start gap-[14px]'>
                         <div className='flex items-center justify-center w-[24] h-[24]'>
                             <Image 
                                 src={'/assets/check-blue.svg'}
@@ -124,7 +124,7 @@ const ProductAdvantages = () => {
 
                         </div>
                         <p className='medium-20'>
-                            Effortless Browsing
+                            WeChat & live chat
                         </p>
                     </li>
                 </ul>
