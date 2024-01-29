@@ -24,7 +24,7 @@ const MobileNav = () => {
         onClick={() => handleToggle(!toggle)}
         />
 
-        <div className={`nav-mobile-container flex justify-end ${toggle ? 'active' : ''}`}>
+        <div className={`nav-mobile-container flex justify-end ${toggle ? 'active' : ''} z-30`}>
             <div
             className={`nav-mobile p-4`}
             >

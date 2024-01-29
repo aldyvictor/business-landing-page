@@ -5,6 +5,7 @@ import Hero from '@/components/Hero'
 import Partner from '@/components/Partner'
 import Product from '@/components/Product'
 import ProductAdvantages from '@/components/ProductAdvantages'
+import Subscribe from '@/components/Subscribe'
 import Testimonials from '@/components/Testimonials'
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <Achievement />
       <ProductAdvantages />
       <Download />
+      <Subscribe />
     </>
   )
 }

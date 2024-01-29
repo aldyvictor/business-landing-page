@@ -93,7 +93,7 @@ const ProductAdvantages = () => {
                             />
 
                         </div>
-                        <p className='medium-20'>
+                        <p className='regular-18 sm:medium-20'>
                             Effortless Browsing
                         </p>
                     </li>
@@ -108,8 +108,8 @@ const ProductAdvantages = () => {
                             />
 
                         </div>
-                        <p className='medium-20'>
-                            Secure Top 5% Industry Experts for Your Project
+                        <p className='regular-18 sm:medium-20'>
+                            Secure Top 5% Industry Experts <span className='hidden sm:inline-block'>for Your Project</span>
                         </p>
                     </li>
                     <li className='flex flex items-center justify-start gap-[14px]'>
@@ -123,7 +123,7 @@ const ProductAdvantages = () => {
                             />
 
                         </div>
-                        <p className='medium-20'>
+                        <p className='regular-18 sm:medium-20'>
                             WeChat & live chat
                         </p>
                     </li>
