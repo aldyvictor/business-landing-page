@@ -24,7 +24,7 @@ export const NAV_LINKS = [
         dropwon : [],
     },
     {
-        href : '/',
+        href : '/#about-us',
         key : 'about',
         label : 'About',
         dropwon : [],
