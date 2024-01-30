@@ -1,8 +1,14 @@
+'use client';
+
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import SectionWrapper from '@/hoc/SectionWrapper';
+import { motion } from 'framer-motion';
+import { fadeIn, textVariant } from '@/utils/motion';
 
 const Download = () => {
+    
   return (
     <section className='relative flexCenter bg-primary-light-100 pt-24'>
         <div className='max-container-1280 padding-container flex flex-col xl:flex-row items-center xl:items-end justify-between w-full gap-[34px] xl:gap-[68px]'>
@@ -17,16 +23,25 @@ const Download = () => {
             </div>
 
             <div className='flex items-start flex-col gap-[32px] h-full mb-12'>
-                <h3 className='bold-42 lg:bold-56 mb-4 xl:mb-0'>
+                <motion.h3 
+                    variants={textVariant()}
+                    className='bold-42 lg:bold-56 mb-4 xl:mb-0'
+                >
                     Download our mobile app
-                </h3>
+                </motion.h3>
 
-                <p className='regular-20 lg:regular-24 text-black/60 mb-4 xl:mb-0'>
+                <motion.p 
+                    variants={fadeIn('', '', 0.1, 1)}   
+                    className='regular-20 lg:regular-24 text-black/60 mb-4 xl:mb-0'
+                >
                     X equips you with the essential tools to craft a genuinely professional SaaS website.
-                </p>
+                </motion.p>
 
                 <ul className='flex items-start justify-start flex-col gap-[18px]  mb-4 xl:mb-1'>
-                    <li className='flex items-center justify-start gap-[14px]'>
+                    <motion.li 
+                        variants={fadeIn('left', 'spring', 0.2 * 1, 1)}
+                        className='flex items-center justify-start gap-[14px]'
+                    >
                         <div className='flex items-center justify-center w-[24] h-[24]'>
                             <Image 
                                 src={'/assets/check-blue.svg'}
@@ -40,8 +55,11 @@ const Download = () => {
                         <p className='regular-18 sm:medium-20'>
                             Effortless Browsing
                         </p>
-                    </li>
-                    <li className='flex items-center flex items-center justify-start gap-[14px]'>
+                    </motion.li>
+                    <motion.li 
+                        variants={fadeIn('left', 'spring', 0.2 * 2, 1)}
+                        className='flex items-center flex items-center justify-start gap-[14px]'
+                    >
                         <div className='flex items-center justify-center w-[24] h-[24]'>
                             <Image 
                                 src={'/assets/check-blue.svg'}
@@ -55,8 +73,11 @@ const Download = () => {
                         <p className='regular-18 sm:medium-20'>
                             Secure Top 5% Industry Experts <span className='hidden sm:inline-block'>for Your Project</span>
                         </p>
-                    </li>
-                    <li className='flex items-center flex items-center justify-start gap-[14px]'>
+                    </motion.li>
+                    <motion.li 
+                        variants={fadeIn('left', 'spring', 0.2 * 3, 1)}
+                        className='flex items-center flex items-center justify-start gap-[14px]'
+                    >
                         <div className='flex items-center justify-center w-[24] h-[24]'>
                             <Image 
                                 src={'/assets/check-blue.svg'}
@@ -70,29 +91,37 @@ const Download = () => {
                         <p className='regular-18 sm:medium-20'>
                             WeChat & live chat
                         </p>
-                    </li>
+                    </motion.li>
                 </ul>
 
                 <div className='flexStart gap-5'>
-                    <Link href={'#'}>
-                        <Image 
-                            src={'/assets/app-store.png'}
-                            alt='app-store'
-                            width={167}
-                            height={54}
-                            className='object-contain'
-                        />
-                    </Link>
+                    <motion.div
+                        variants={fadeIn('left', 'spring', 0.2 * 4, 1)}
+                    >
+                        <Link href={'#'}>
+                            <Image 
+                                src={'/assets/app-store.png'}
+                                alt='app-store'
+                                width={167}
+                                height={54}
+                                className='object-contain'
+                            />
+                        </Link>
+                    </motion.div>
 
-                    <Link href={'#'}>
-                        <Image 
-                            src={'/assets/play-store.png'}
-                            alt='play-store'
-                            width={179}
-                            height={54}
-                            className='object-contain'
-                        />
-                    </Link>
+                    <motion.div
+                        variants={fadeIn('left', 'spring', 0.2 * 5, 1)}
+                    >
+                        <Link href={'#'}>
+                            <Image 
+                                src={'/assets/play-store.png'}
+                                alt='play-store'
+                                width={179}
+                                height={54}
+                                className='object-contain'
+                            />
+                        </Link>
+                    </motion.div>
                 </div>
             </div>
         </div>
@@ -100,4 +129,4 @@ const Download = () => {
   )
 }
 
-export default Download
+export default SectionWrapper(Download, 'download')

@@ -1,6 +1,11 @@
+'use client';
+
 import Image from 'next/image'
 import React from 'react'
 import AnchorButton from './AnchorButton'
+import { motion } from 'framer-motion';
+import SectionWrapper from '@/hoc/SectionWrapper';
+import { fadeIn, textVariant } from '@/utils/motion';
 
 const ProductAdvantages = () => {
   return (
@@ -8,16 +13,21 @@ const ProductAdvantages = () => {
         <div className='w-full h-full flex items-center flex-col xl:flex-row  gap-[68px]'>
             <div className='flex flex-shrink-0 max-w-[472px] max-h-[494px] w-full h-full justify-start'>
                 <div className='w-full flex items-center justify-center pr-0 xl:pr-20'>
-                    <Image 
-                        src={'/assets/product-advantages.png'}
-                        alt='product-advantages'
-                        width={383}
-                        height={494}
-                        className='object-cover'
-                    />
+                    <motion.div variants={fadeIn('right', 'spring', 0.1, 1)}>
+                        <Image 
+                            src={'/assets/product-advantages.png'}
+                            alt='product-advantages'
+                            width={383}
+                            height={494}
+                            className='object-cover'
+                        />
+                    </motion.div>
 
                     <div className='absolute flex flex-col items-start lg:h-full w-full max-w-[472px] gap-[18px] pt-0 xl:pt-14 top-0'>
-                        <div className='w-full flex items-center justify-end mt-9'>
+                        <motion.div 
+                            variants={fadeIn('right', 'spring', 0.5, 1)}
+                            className='w-full flex items-center justify-end mt-9'
+                        >
                             <div className='flex items-center justify-center shadow-lg px-3 py-2 rounded-[17px] gap-2 bg-white mr-10 sm:mr-8'>
                                 <span className='flexCenter w-[18px] h-[18px] rounded-full bg-secondary-blue-100'>
                                     <Image 
@@ -32,9 +42,12 @@ const ProductAdvantages = () => {
                                     Easily Manage and Access with Our Mobile App
                                 </p>
                             </div>
-                        </div>
+                        </motion.div>
 
-                        <div className='w-full flex items-center justify-end'>
+                        <motion.div 
+                            variants={fadeIn('right', 'spring', 0.7, 1)}
+                            className='w-full flex items-center justify-end'
+                        >
                             <div className='flex items-center justify-center shadow-lg px-3 py-2 rounded-[17px] gap-2 bg-white -mr-0 sm:-mr-12'>
                                 <span className='flexCenter w-[18px] h-[18px] rounded-full bg-secondary-blue-100'>
                                     <Image 
@@ -49,9 +62,12 @@ const ProductAdvantages = () => {
                                     A suite of features for effortless card management.
                                 </p>
                             </div>
-                        </div>
+                        </motion.div>
 
-                        <div className='w-full flex items-center justify-start'>
+                        <motion.div 
+                            variants={fadeIn('right', 'spring', 0.9, 1)}
+                            className='w-full flex items-center justify-start'
+                        >
                             <div className='flex items-center justify-center shadow-lg px-3 py-2 rounded-[17px] gap-2 bg-white ml-4'>
                                 <span className='flexCenter w-[18px] h-[18px] rounded-full bg-secondary-blue-100'>
                                     <Image 
@@ -66,23 +82,32 @@ const ProductAdvantages = () => {
                                     Enhanced Security Infrastructure
                                 </p>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
 
                 </div>
             </div>
 
             <div className='flex items-start flex-col gap-[32px] h-full'>
-                <h3 className='bold-42 lg:bold-56 mt-3'>
+                <motion.h3 
+                    variants={textVariant()}
+                    className='bold-42 lg:bold-56 mt-3'
+                >
                     Pave your path to triumph with XB innovation. 
-                </h3>
+                </motion.h3>
 
-                <p className='regular-20 lg:regular-24 text-black/60 mb-4 xl:mb-8'>
+                <motion.p 
+                    variants={fadeIn('', '', 0.1, 1)}   
+                    className='regular-20 lg:regular-24 text-black/60 mb-4 xl:mb-8'
+                >
                     X equips you with the essential tools to craft a genuinely professional SaaS website.
-                </p>
+                </motion.p>
 
                 <ul className='flex items-start justify-start flex-col gap-[18px]  mb-4 xl:mb-1'>
-                    <li className='flex items-center justify-start gap-[14px]'>
+                    <motion.li 
+                        variants={fadeIn('left', 'spring', 0.2 * 1, 1)}
+                        className='flex items-center justify-start gap-[14px]'
+                    >
                         <div className='flex items-center justify-center w-[24] h-[24]'>
                             <Image 
                                 src={'/assets/check-blue.svg'}
@@ -96,8 +121,11 @@ const ProductAdvantages = () => {
                         <p className='regular-18 sm:medium-20'>
                             Effortless Browsing
                         </p>
-                    </li>
-                    <li className='flex flex items-center justify-start gap-[14px]'>
+                    </motion.li>
+                    <motion.li 
+                        variants={fadeIn('left', 'spring', 0.2 * 2, 1)}
+                        className='flex flex items-center justify-start gap-[14px]'
+                    >
                         <div className='flex items-center justify-center w-[24] h-[24]'>
                             <Image 
                                 src={'/assets/check-blue.svg'}
@@ -111,8 +139,11 @@ const ProductAdvantages = () => {
                         <p className='regular-18 sm:medium-20'>
                             Secure Top 5% Industry Experts <span className='hidden sm:inline-block'>for Your Project</span>
                         </p>
-                    </li>
-                    <li className='flex flex items-center justify-start gap-[14px]'>
+                    </motion.li>
+                    <motion.li 
+                        variants={fadeIn('left', 'spring', 0.2 * 3, 1)}
+                        className='flex flex items-center justify-start gap-[14px]'
+                    >
                         <div className='flex items-center justify-center w-[24] h-[24]'>
                             <Image 
                                 src={'/assets/check-blue.svg'}
@@ -126,19 +157,23 @@ const ProductAdvantages = () => {
                         <p className='regular-18 sm:medium-20'>
                             WeChat & live chat
                         </p>
-                    </li>
+                    </motion.li>
                 </ul>
 
-                <AnchorButton
-                    href='/'
-                    variant='btn-red-primary'
+                <motion.div
+                    variants={fadeIn('', '', 0.2, 1)}
                 >
-                    More About Us
-                </AnchorButton>
+                    <AnchorButton
+                        href='/'
+                        variant='btn-red-primary'
+                    >
+                        More About Us
+                    </AnchorButton>
+                </motion.div>
             </div>
         </div>
     </section>
   )
 }
 
-export default ProductAdvantages
+export default SectionWrapper(ProductAdvantages, 'product-advantages');

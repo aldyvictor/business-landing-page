@@ -1,11 +1,19 @@
+'use client';
+
 import Image from 'next/image'
 import React from 'react'
+import { motion } from 'framer-motion';
+import SectionWrapper from '@/hoc/SectionWrapper';
+import { fadeIn } from '@/utils/motion';
 
 const Achievement = () => {
   return (
     <section className='relative max-container-1280 padding-container flexCenter py-12 mt-5'>
         <div className='flex flex-col md:flex-row items-center md:items-start justify-between gap-8 xl:gap-16 w-full'>
-            <div className='flexCenter flex-col'>
+            <motion.div 
+                variants={fadeIn("right", "spring", 0.3 * 1, 0.75)}
+                className='flexCenter flex-col'
+            >
                 <h2 className='bold-72 md:bold-40 xl:bold-72 text-secondary-blue-100'>
                     300+
                 </h2>
@@ -22,8 +30,11 @@ const Achievement = () => {
                         partner with us
                     </p>
                 </div>
-            </div>
-            <div className='flexCenter flex-col'>
+            </motion.div>
+            <motion.div 
+                variants={fadeIn("right", "spring", 0.3 * 2, 0.75)}
+                className='flexCenter flex-col'
+            >
                 <h2 className='bold-72 md:bold-40 xl:bold-72 text-secondary-blue-100'>
                     $3.2b+
                 </h2>
@@ -40,8 +51,11 @@ const Achievement = () => {
                         Cumulative trending
                     </p>
                 </div>
-            </div>
-            <div className='flexCenter flex-col'>
+            </motion.div>
+            <motion.div
+                variants={fadeIn("right", "spring", 0.3 * 3, 0.75)}
+                className='flexCenter flex-col'
+            >
                 <h2 className='bold-72 md:bold-40 xl:bold-72 text-secondary-blue-100'>
                     860k
                 </h2>
@@ -58,8 +72,11 @@ const Achievement = () => {
                         Successful projects
                     </p>
                 </div>
-            </div>
-            <div className='flexCenter flex-col'>
+            </motion.div>
+            <motion.div 
+                variants={fadeIn("right", "spring", 0.3 * 4, 0.75)}
+                className='flexCenter flex-col'
+            >
                 <h2 className='bold-72 md:bold-40 xl:bold-72 text-secondary-blue-100'>
                     1.6%
                 </h2>
@@ -76,10 +93,10 @@ const Achievement = () => {
                         Low interest rate
                     </p>
                 </div>
-            </div>
+            </motion.div>
         </div>
     </section>
   )
 }
 
-export default Achievement
+export default SectionWrapper(Achievement, 'achievement');

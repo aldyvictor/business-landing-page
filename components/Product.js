@@ -1,16 +1,28 @@
+'use client';
+
 import Image from 'next/image'
 import React from 'react'
+import { motion } from 'framer-motion';
+import { fadeIn, staggerContainer, textVariant } from '@/utils/motion';
+import SectionWrapper from '@/hoc/SectionWrapper';
 
 const Product = () => {
   return (
-    <section className='max-container-1280 padding-container relative flexCenter py-20'>
+    <div className='max-container-1280 padding-container relative flexCenter py-20'>
         <div className='flex items-start justify-center flex-col w-full'>
-            <h2 className='bold-56'>
-                We're here to assist you in creating, <br /> managing
-            </h2>
+            <motion.div
+                variants={textVariant()}
+            >
+                <h2 className='bold-56'>
+                    We're here to assist you in creating, <br /> managing
+                </h2>
+            </motion.div>
 
             <div className='mt-16 grid grid-cols-1 lg:grid-cols-[40%_60%] w-full'>
-                <div className='w-full pb-4 lg:pb-0 lg:pr-4'>
+                <motion.div 
+                    variants={fadeIn('right', 'spring', 0.1, 1)}
+                    className='w-full pb-4 lg:pb-0 lg:pr-4'
+                >
                     <div className='h-full lg:min-h-[493px] px-9 pt-[52px] pb-0 flex items-center justify-between flex-col bg-secondary-linearBlue-100 border-2 border-secondary-blueA-100 rounded-[12px]'>
                         <div className='flex flex-col'>
                             <div className='flexBetween pb-[38px] border-b-2 border-black/10'>
@@ -50,9 +62,12 @@ const Product = () => {
                             </p>
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className='w-full pt-4 lg:pt-0 lg:pl-4'>
+                <motion.div 
+                    variants={fadeIn('left', 'spring', 0.3, 1)}
+                    className='w-full pt-4 lg:pt-0 lg:pl-4'
+                >
                     <div className='h-full lg:min-h-[493px] px-9 pt-[52px] pb-0 flex items-center justify-between flex-col bg-secondary-linearBlue-100 border-2 border-secondary-blueA-100 rounded-[12px]'>
                         <div className='flex flex-col'>
                             <div className='flexBetween pb-[38px] border-b-2 border-black/10'>
@@ -92,10 +107,13 @@ const Product = () => {
                             />
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </div>
 
-            <div className='flex items-center xl:items-end justify-center flex-col xl:flex-row gap-[59px] w-full mt-8 px-8 pb-8 pt-[52px] bg-secondary-linearBlue-100 border-2 border-secondary-blueA-100 rounded-[12px]'>
+            <motion.div 
+                variants={fadeIn('up', 'spring', 0.5, 1)}
+                className='flex items-center xl:items-end justify-center flex-col xl:flex-row gap-[59px] w-full mt-8 px-8 pb-8 pt-[52px] bg-secondary-linearBlue-100 border-2 border-secondary-blueA-100 rounded-[12px]'
+            >
                 <div className='flex flex-col items-start gap-[26px] pr-0 xl:pr-6'>
                     <span className='flexCenter rounded-full h-12 w-12 bg-primary-yellow-100 mb-4'>
                         <Image 
@@ -123,10 +141,10 @@ const Product = () => {
                     alt='visa-card'
                     className='object-contain h-full w-full'
                 />
-            </div>
+            </motion.div>
         </div>
-    </section>
+    </div>
   )
 }
 
-export default Product
+export default SectionWrapper(Product, 'product');
