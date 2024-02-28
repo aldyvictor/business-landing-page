@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Wadde
 
-## Getting Started
+## About Project
 
-First, run the development server:
+![alt text](https://api-personal-website.000webhostapp.com/images/projects/wadde-thumb.webp)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+I am learning the art of slicing website designs from [shaynakit](https://shaynakit.com/landing). I recently sliced a company profile website design named "Wadde" using Next.js 14 and Tailwind CSS. This slicing process involves converting visual designs into functional HTML, CSS, and JavaScript code suitable for web usage. It has provided me with insights into component structures, layout settings, and responsive designs on websites.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This project is an open source project, you can preview the code and clone this project. You can also contribute to make this project better.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Prerequisites
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Ensure the following are installed on your computer:
 
-## Learn More
+- Node.js ^20.11.*
+- NPM (Node Package Manager)
 
-To learn more about Next.js, take a look at the following resources:
+## Usage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Clone the Repository:**
+   
+   ```bash
+   git clone https://github.com/aldyvictor/business-landing-page.git
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+2. **Navigate to Project Directory:**
 
-## Deploy on Vercel
+   ```bash
+   cd business-landing-page
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Install Dependencies:**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```bash
+   npm install
+
+4. **Run the Project:**
+
+   ```bash
+   npm run dev
+
+5. **Access the Project:**
+
+   Open a browser and visit http://localhost:3018
+
+## Contribution
+
+I appreciate your contribution! If you'd like to contribute to this project, please create a pull request, and I'll be happy to review it.
+
+"And don't forget to give a star if you like this project! ✌️"
